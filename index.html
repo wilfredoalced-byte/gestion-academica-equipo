@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Sistema de Gestión Académica</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/estudiantes.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Sistema de Gestión Académica</h1>
+    <p>Proyecto grupal - SENATI</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Registro de Estudiantes</h2>
+
+      <form id="formulario-estudiantes" novalidate>
+
+        <label for="codigo">Código del estudiante</label>
+        <input
+          type="text"
+          id="codigo"
+          placeholder="Ejemplo: EST001"
+          required
+        >
+
+        <label for="nombres">Nombres</label>
+        <input
+          type="text"
+          id="nombres"
+          placeholder="Ingrese los nombres"
+          required
+        >
+
+        <label for="apellidos">Apellidos</label>
+        <input
+          type="text"
+          id="apellidos"
+          placeholder="Ingrese los apellidos"
+          required
+        >
+
+        <button type="submit">
+          Registrar estudiante
+        </button>
+
+      </form>
+
+      <p id="mensaje" role="status" aria-live="polite"></p>
+    </section>
+
+    <section>
+      <h2>Listado de Estudiantes</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+          </tr>
+        </thead>
+
+        <tbody id="lista-estudiantes"></tbody>
+
+      </table>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Fullstack Developer Software - SENATI</p>
+  </footer>
+
+</body>
+</html>
